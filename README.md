@@ -1,16 +1,44 @@
-# flutter_curved_navigation_bar
+# CurvedNavigationBar
+[pub package](https://pub.dartlang.org/packages/curved_navigation_bar)
 
-A new Flutter application.
+A Flutter package for easy implementation of curved navigation bar. 
 
-## Getting Started
+![Gif](https://github.com/rafalbednarczuk/curved_navigation_bar/blob/master/example.gif "Fancy Gif")
 
-This project is a starting point for a Flutter application.
+### Add dependency
 
-A few resources to get you started if this is your first Flutter project:
+```yaml
+dependencies:
+  curved_navigation_bar: ^0.2.11 #latest version
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Easy to use
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+Scaffold(
+  bottomNavigationBar: CurvedNavigationBar(
+    backgroundColor: Colors.blueAccent,
+    items: <Widget>[
+      Icon(Icons.add, size: 30),
+      Icon(Icons.list, size: 30),
+      Icon(Icons.compare_arrows, size: 30),
+    ],
+    onTap: (index) {
+      //Handle button tap
+    },
+  ),
+  body: Container(color: Colors.blueAccent),
+)
+```
+
+### Attributes
+
+items: List of Widgets  
+index: index of NavigationBar, can be used to change current index or to set initial index  
+color: Color of NavigationBar, default Colors.white  
+buttonBackgroundColor: background color of floating button, default same as color attribute  
+backgroundColor: Color of NavigationBar's background, default Colors.blueAccent  
+onTap: Function handling taps on items  
+animationCurve: Curves interpolating button change animation, default Curves.easeOutCubic  
+animationDuration: Duration of button change animation, default Duration(milliseconds: 600)  
+height: Height of NavigationBar, min 0.0, max 75.0  
