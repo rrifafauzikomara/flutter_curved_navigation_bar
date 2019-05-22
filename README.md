@@ -44,3 +44,9 @@ onTap: Function handling taps on items
 animationCurve: Curves interpolating button change animation, default Curves.easeOutCubic  
 animationDuration: Duration of button change animation, default Duration(milliseconds: 600)  
 height: Height of NavigationBar, min 0.0, max 75.0  
+
+## Author
+
+* **R Rifa Fauzi Komara**
+
+Don't forget to follow and ★
