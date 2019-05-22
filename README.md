@@ -5,9 +5,7 @@ A Flutter package for easy implementation of curved navigation bar.
 
 ![Gif](https://github.com/rrifafauzikomara/flutter_curved_navigation_bar/blob/master/example.gif "Fancy Gif")
 
-<pre>
 <img src="curved.png" width="250" height="444">
-</pre>
 
 ### Add dependency
 
